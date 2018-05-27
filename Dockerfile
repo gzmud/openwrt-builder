@@ -11,4 +11,4 @@ WORKDIR /builder
 ENV HOME /builder
 ADD . /builder
 
-ENTRYPOINT bash --init-file /etc/dockerinit
+ENTRYPOINT su sudo -iu builder bash --init-file /etc/dockerinit
