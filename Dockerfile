@@ -10,6 +10,5 @@ RUN apt-get update && apt-get install sudo
 
 WORKDIR /builder
 ENV HOME /builder
-ADD . /builder
 
 ENTRYPOINT sudo -iu builder bash --init-file /etc/dockerinit
