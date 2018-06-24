@@ -10,4 +10,4 @@ RUN chown -R builder:builder /etc/dockerscript /etc/dockerinit /builder
 WORKDIR /builder
 ENV HOME /builder
 
-ENTRYPOINT chown -R builder:builder /builder/lede && sudo -iu builder bash --init-file /etc/dockerinit
+ENTRYPOINT sudo -iu builder bash --init-file /etc/dockerinit
